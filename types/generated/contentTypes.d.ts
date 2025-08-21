@@ -555,7 +555,8 @@ export interface ApiServiceItemServiceItem extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    description: Schema.Attribute.Text;
+    descriptionAr: Schema.Attribute.Text;
+    descriptionEn: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -565,9 +566,11 @@ export interface ApiServiceItemServiceItem extends Struct.CollectionTypeSchema {
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID;
-    sub_items: Schema.Attribute.JSON;
+    subItemsAr: Schema.Attribute.JSON;
+    subItemsEn: Schema.Attribute.JSON;
     thumbnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    title: Schema.Attribute.String;
+    titleAr: Schema.Attribute.String;
+    titleEn: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

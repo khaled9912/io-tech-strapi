@@ -11,13 +11,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "titleAr": {
       "type": "string"
     },
     "slug": {
       "type": "uid"
     },
-    "description": {
+    "descriptionAr": {
       "type": "text"
     },
     "thumbnail": {
@@ -43,7 +43,16 @@
     "order": {
       "type": "integer"
     },
-    "sub_items": {
+    "subItemsAr": {
+      "type": "json"
+    },
+    "titleEn": {
+      "type": "string"
+    },
+    "descriptionEn": {
+      "type": "text"
+    },
+    "subItemsEn": {
       "type": "json"
     }
   }
