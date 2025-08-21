@@ -459,13 +459,16 @@ export interface ApiHeroSectionContentHeroSectionContent
       'api::hero-section-content.hero-section-content'
     > &
       Schema.Attribute.Private;
-    media: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+    logoSlider: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
     >;
     publishedAt: Schema.Attribute.DateTime;
     readmore_button_link: Schema.Attribute.String;
     readmore_button_text: Schema.Attribute.String;
+    slideImages: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
@@ -632,10 +635,13 @@ export interface ApiTeamMemberTeamMember extends Struct.CollectionTypeSchema {
       'api::team-member.team-member'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String;
+    nameAr: Schema.Attribute.String;
+    nameEn: Schema.Attribute.String;
     photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
-    role: Schema.Attribute.String;
+    roleAr: Schema.Attribute.String;
+    roleEn: Schema.Attribute.String;
+    services: Schema.Attribute.JSON;
     social_links: Schema.Attribute.JSON;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

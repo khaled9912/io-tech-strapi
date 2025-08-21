@@ -11,10 +11,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "nameEn": {
       "type": "string"
     },
-    "role": {
+    "roleEn": {
       "type": "string"
     },
     "bio": {
@@ -31,6 +31,15 @@
       ]
     },
     "social_links": {
+      "type": "json"
+    },
+    "nameAr": {
+      "type": "string"
+    },
+    "roleAr": {
+      "type": "string"
+    },
+    "services": {
       "type": "json"
     }
   }

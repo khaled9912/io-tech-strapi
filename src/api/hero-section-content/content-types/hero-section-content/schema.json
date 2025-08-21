@@ -17,7 +17,7 @@
     "subtitle": {
       "type": "string"
     },
-    "media": {
+    "slideImages": {
       "type": "media",
       "multiple": true,
       "allowedTypes": [
@@ -32,6 +32,16 @@
     },
     "readmore_button_link": {
       "type": "string"
+    },
+    "logoSlider": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
