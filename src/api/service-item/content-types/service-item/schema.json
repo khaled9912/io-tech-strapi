@@ -42,6 +42,9 @@
     },
     "order": {
       "type": "integer"
+    },
+    "sub_items": {
+      "type": "json"
     }
   }
 }
