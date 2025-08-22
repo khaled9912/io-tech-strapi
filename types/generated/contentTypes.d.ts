@@ -422,6 +422,7 @@ export interface ApiClientProfileClientProfile
     clientNameAr: Schema.Attribute.String;
     clientNameEn: Schema.Attribute.String;
     clientTitleAr: Schema.Attribute.String;
+    clientTitleEn: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -434,7 +435,7 @@ export interface ApiClientProfileClientProfile
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
     testimonialAr: Schema.Attribute.Text;
-    testimonialEn: Schema.Attribute.String;
+    testimonialEn: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

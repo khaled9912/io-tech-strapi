@@ -31,10 +31,13 @@
       "type": "string"
     },
     "testimonialEn": {
-      "type": "string"
+      "type": "text"
     },
     "clientNameEn": {
       "type": "string"
+    },
+    "clientTitleEn": {
+      "type": "text"
     }
   }
 }
