@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "clientNameAr": {
       "type": "string"
     },
     "logo": {
@@ -24,8 +24,17 @@
         "audios"
       ]
     },
-    "testimonial": {
+    "testimonialAr": {
       "type": "text"
+    },
+    "clientTitleAr": {
+      "type": "string"
+    },
+    "testimonialEn": {
+      "type": "string"
+    },
+    "clientNameEn": {
+      "type": "string"
     }
   }
 }

@@ -419,6 +419,9 @@ export interface ApiClientProfileClientProfile
     draftAndPublish: true;
   };
   attributes: {
+    clientNameAr: Schema.Attribute.String;
+    clientNameEn: Schema.Attribute.String;
+    clientTitleAr: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -429,9 +432,9 @@ export interface ApiClientProfileClientProfile
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
-    testimonial: Schema.Attribute.Text;
+    testimonialAr: Schema.Attribute.Text;
+    testimonialEn: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
